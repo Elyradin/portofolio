@@ -1,0 +1,274 @@
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* penting biar di atas Galaxy */
+}
+
+.home-card {
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-family: 'Maiden Orange', serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 12vw, 12rem);
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 0%;
+  color: white;
+  line-height: .8;     /* bikin teks lebih rapat */
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  margin-top: -10px;   /* tarik lebih dekat lagi */
+  line-height: 1;
+  text-transform: lowercase;
+  font-size: clamp(1.5rem, 6vw, 6rem);
+  padding: 0;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #c8f169;
+}
+.subtitle-about {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  margin-top: -10px;   /* tarik lebih dekat lagi */
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 6vw, 6rem);
+  padding: 0;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5dd62c;
+}
+
+.desc {
+  margin-top: 15px;
+  opacity: .8;
+}
+
+.btn-main {
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #2a6f2b;
+  color: white;
+}
+
+.btn-main:hover {
+  background: #3fa33f;
+  color: white;
+  text-decoration: none;
+}
+
+.about-me-content {
+  max-width: 800px;
+  margin: auto;
+  color: white;
+  background-color: #0f0f0f;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.desc-about {
+  margin-top: 17px;
+  opacity: .8;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* css button */
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: greenyellow;
+  box-shadow: 0 0 0 2px greenyellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: greenyellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.about-carousel{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+}
+
+.about-carousel::-webkit-scrollbar{
+  height: 8px;
+}
+
+.about-carousel::-webkit-scrollbar-thumb{
+  background: #38ff45;
+  border-radius: 50px;
+}
+
+.about-card{
+  min-width: 80%;
+  scroll-snap-align: center;
+  background: #0c0c0c;
+  border: 2px solid #38ff45;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,255,100,.3);
+}
+.carousel-wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.carousel{
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.card{
+  min-width: 100%;
+  background: #0c0c0c;
+  border: 2px solid #38ff45;
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,255,100,.3);
+}
+
+.nav{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #38ff45;
+  border: none;
+  padding: 10px 15px;
+  font-size: 22px;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left{ left: -10px; }
+.right{ right: -10px; }
+
+.nav:hover{
+  background: white;
+}
+
+.dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active{
+  background: #38ff45;
+  box-shadow: 0 0 12px #38ff45;
+}
+
