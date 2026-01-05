@@ -5,7 +5,7 @@ export default function AboutSection() {
   const items = [
     { 
       title: "Education",
-      text: "Bachelor of Software Engineering — focused on Web Development, System Development, and Software Engineering."
+      text: "Bachelor of Software Engineering — Universitas Gadjah Mada (2021 - 2025)"
     },
     { 
       title: "Skills",
