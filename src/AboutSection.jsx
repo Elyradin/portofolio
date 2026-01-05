@@ -5,11 +5,11 @@ export default function AboutSection() {
   const items = [
     { 
       title: "Education",
-      text: "Bachelor of Informatics — focused on Web Development, System Development, and Software Engineering."
+      text: "Bachelor of Software Engineering — focused on Web Development, System Development, and Software Engineering."
     },
     { 
       title: "Skills",
-      text: "React • Laravel • REST API • MySQL • Bootstrap • UI/UX Basic"
+      text: " Laravel • Code Igniter • REST API • MySQL • Bootstrap • HTML • CSS •  UI/UX Basic"
     },
     { 
       title: "Social Media",
@@ -17,7 +17,7 @@ export default function AboutSection() {
     },
     { 
       title: "Achievements",
-      text: "HKI Computer Program • Junior Data Analyst Certification • Best Project Awards"
+      text: "HKI Computer Program • Certified Associate Data Scientist"
     }
   ];
 
