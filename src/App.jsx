@@ -25,8 +25,21 @@ export default function App() {
             </p>
 
             <div>
-              <button className="btn-main">See My Work</button>
-              <button className="btn-main">Download CV!</button>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={800}
+                offset={-50}
+                className="btn-main"
+              >
+                See My Work
+              </Link>
+              <a
+                href="https://drive.google.com/file/d/1-eXNviU1VO8cpnx9RmVpBvXPEzmxEw74/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-main"
+              >Download CV!</a>
             </div>
           </div>
         </div>
@@ -42,8 +55,6 @@ export default function App() {
 
       {/* SECTION PROJECTS */}
       <ProjectsSection />
-
-    
     </>
   );
 }

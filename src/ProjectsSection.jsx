@@ -45,7 +45,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h1 className="projects-title">PROJECTS</h1>
 
       <div className="projects-grid">

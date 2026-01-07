@@ -17,7 +17,7 @@
     "react-dom": "^19.2.0",
     "react-scroll": "^1.9.3"
   },
-  "homepage": "https://Elyradin.github.io/portfolio",
+  "homepage": "https://elyradin.github.io/portofolio",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.5",
